@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7654" started-at="2018-09-15T08:15:15Z" finished-at="2018-09-15T08:15:22Z">
+  <suite name="Default suite" duration-ms="54" started-at="2020-07-19T03:08:46Z" finished-at="2020-07-19T03:08:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7654" started-at="2018-09-15T08:15:15Z" finished-at="2018-09-15T08:15:22Z">
-      <class name="TestFramework.excelDriven">
-        <test-method status="PASS" signature="addBook()" name="addBook" duration-ms="7604" started-at="2018-09-15T08:15:15Z" finished-at="2018-09-15T08:15:22Z">
+    <test name="Default test" duration-ms="54" started-at="2020-07-19T03:08:46Z" finished-at="2020-07-19T03:08:46Z">
+      <class name="TestFramework.ReadPropertyFile">
+        <test-method status="PASS" signature="printval()" name="printval" duration-ms="27" started-at="2020-07-19T03:08:46Z" finished-at="2020-07-19T03:08:46Z">
         </test-method>
       </class>
     </test>

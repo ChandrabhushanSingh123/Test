@@ -35,6 +35,13 @@
    <version>4.13</version> 
    <scope>test</scope> 
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-core</artifactId>
+    <version>2.2</version>
+    <scope>test</scope>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>

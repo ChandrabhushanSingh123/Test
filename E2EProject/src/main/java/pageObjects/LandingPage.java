@@ -15,28 +15,17 @@ public class LandingPage {
 	private  By header=By.cssSelector("div[class*='video-banner'] h3");
 	
 	
-	
-	
-	
 	public LandingPage(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		
 		this.driver=driver;
-		
 	}
-
-
-
 
 	public LoginPage getLogin()
 	{
 		 driver.findElement(signin).click();
 		 LoginPage lp=new LoginPage(driver);
 		 return lp;
-		 
-		 
-		 
-		 
+		   
 	}
 	public WebElement getNavigationBar()
 	{

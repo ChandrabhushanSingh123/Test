@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: com.studentapp.junit.studentsinfo.StudentsCRUDTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 408.228 sec <<< FAILURE! - in com.studentapp.junit.studentsinfo.StudentsCRUDTest
+test001(com.studentapp.junit.studentsinfo.StudentsCRUDTest)  Time elapsed: 329.045 sec  <<< FAILURE!
+java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <5L> seconds, was 201957 milliseconds (201 seconds).
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:88)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:311)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:292)
+	at com.studentapp.junit.studentsinfo.StudentsCRUDTest.test001(StudentsCRUDTest.java:52)
+
+test002(com.studentapp.junit.studentsinfo.StudentsCRUDTest)  Time elapsed: 21.371 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:12)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.studentapp.junit.studentsinfo.StudentsCRUDTest.test002(StudentsCRUDTest.java:63)
+
+test003(com.studentapp.junit.studentsinfo.StudentsCRUDTest)  Time elapsed: 6.659 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at Script1.run(Script1.groovy:1)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:585)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:623)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:594)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:398)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:200)
+	at com.studentapp.cucumber.serenity.StudentSerenitySteps.getStudentInfoByFirstName(StudentSerenitySteps.java:49)
+	at com.studentapp.junit.studentsinfo.StudentsCRUDTest.test003(StudentsCRUDTest.java:85)
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="1" name="com.studentapp.junit.studentsinfo.StudentsCRUDTest" skipped="0" tests="4" time="359.82" timestamp="2020-09-04 04:31:09"><testcase classname="com.studentapp.junit.studentsinfo.StudentsCRUDTest" name="This test will create a new student"><failure message="1 expectation failed.&#10;Expected response time was not a value less than &lt;5L&gt; seconds, was 201957 milliseconds (201 seconds)." type="java.lang.AssertionError">1 expectation failed.
+Expected response time was not a value less than &lt;5L&gt; seconds, was 201957 milliseconds (201 seconds).</failure><system-err>1 expectation failed.
+Expected response time was not a value less than &lt;5L&gt; seconds, was 201957 milliseconds (201 seconds).&#13;
+io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:88)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:311)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:292)&#13;
+com.studentapp.junit.studentsinfo.StudentsCRUDTest.test001(StudentsCRUDTest.java:52)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.StudentsCRUDTest" name="Verify if the student was added to the application"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.studentapp.junit.studentsinfo.StudentsCRUDTest.test002(StudentsCRUDTest.java:63)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.StudentsCRUDTest" name="Update the user information and verify the updated information!"><error message="Index: 0, Size: 0" type="java.lang.IllegalArgumentException">Index: 0, Size: 0</error><system-err>Index: 0, Size: 0&#13;
+io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)&#13;
+io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)&#13;
+io.restassured.path.json.JsonPath.get(JsonPath.java:202)&#13;
+io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:398)&#13;
+io.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:200)&#13;
+com.studentapp.cucumber.serenity.StudentSerenitySteps.getStudentInfoByFirstName(StudentSerenitySteps.java:49)&#13;
+com.studentapp.junit.studentsinfo.StudentsCRUDTest.test003(StudentsCRUDTest.java:85)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.StudentsCRUDTest" name="Delete the student and verify if the student is deleted!"/></testsuite>

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Students CRUD test","This test will create a new student","FAILURE","2020-09-04T16:31:09.22+05:30[Asia/Calcutta]","0.0","328.35"
+"First serenity test1","Wrong err code","FAILURE","2020-09-04T16:36:52.967+05:30[Asia/Calcutta]","0.0","3.71"
+"Students CRUD test","Verify if the student was added to the application","ERROR","2020-09-04T16:36:52.991+05:30[Asia/Calcutta]","0.0","21.41"
+"Students CRUD test","Update the user information and verify the updated information!","ERROR","2020-09-04T16:37:14.442+05:30[Asia/Calcutta]","0.0","6.57"
+"Create students data driven test","DataDriven Test for adding multiple students to the Student App.","FAILURE","2020-09-04T16:39:02.776+05:30[Asia/Calcutta]","0.0","5040.48"
